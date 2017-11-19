@@ -62,3 +62,40 @@ $(function () {
         autoplayHoverPause: true
     });
 });
+/* ============================================
+                    NAVIGATION
+=============================================*/
+// show/hide transparent black navigation
+
+$(function(){
+   $(window).scroll(function(){
+       if($(this).scrollTop() < 50 ) {
+            //hide nav
+           $("nav").removeClass("vesco-top-nav");
+          } else {
+            //show nav
+              $("nav").addClass("vesco-top-nav");
+          }
+   }); 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
