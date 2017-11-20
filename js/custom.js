@@ -67,35 +67,26 @@ $(function () {
 =============================================*/
 // show/hide transparent black navigation
 
-$(function(){
-   $(window).scroll(function(){
-       if($(this).scrollTop() < 50 ) {
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 50) {
             //hide nav
-           $("nav").removeClass("vesco-top-nav");
-          } else {
+            $("nav").removeClass("vesco-top-nav");
+        } else {
             //show nav
-              $("nav").addClass("vesco-top-nav");
-          }
-   }); 
+            $("nav").addClass("vesco-top-nav");
+        }
+    });
 });
+// Smooth scrolling
+$(function () {
+    $("a.smooth-scroll").click(function (event) {
+        event.preventDefault();
+        // get/return id like #about, #work, #team and etc
+        var section = $(this).attr("href");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        $('html, body').animate({
+            scrollTop: $(section).offset().top - 64
+        }, 1250, "easeInOutExpo");
+    });
+});
