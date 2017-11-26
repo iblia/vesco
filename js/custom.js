@@ -27,19 +27,19 @@ $(function () {
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true,
-        responsive : {
+        responsive: {
             // breakpoint from 0 up
-            0 : {
+            0: {
                 items: 1
             },
             // breakpoint from 480 up
-            480 : {
+            480: {
                 items: 2
             },
             // breakpoint from 768 up
-            768 : {
+            768: {
                 items: 3
-            }         
+            }
         }
     });
 });
@@ -74,21 +74,21 @@ $(function () {
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true,
-        responsive : {
+        responsive: {
             // breakpoint from 0 up
-            0 : {
+            0: {
                 items: 1
             },
             // breakpoint from 480 up
-            480 : {
+            480: {
                 items: 3
             },
             // breakpoint from 768 up
-            768 : {
+            768: {
                 items: 5
             },
             // breakpoint from 992 up            
-            992 : {
+            992: {
                 items: 6
             }
         }
@@ -126,25 +126,8 @@ $(function () {
     });
 });
 // Close mobile menu on click
-$(function(){
-    $(".navbar-collapse ul li a").on("click touch", function(){
+$(function () {
+    $(".navbar-collapse ul li a").on("click touch", function () {
         $(".navbar-toggle").click();
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
