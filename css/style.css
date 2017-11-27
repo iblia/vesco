@@ -532,6 +532,7 @@ address {
     color: #fff;
 }
 
+address strong { font-size: 16px; }
 address strong,
 #phone-fax-email strong {
     letter-spacing: 1px;
@@ -553,7 +554,7 @@ form .form-control {
 =============================================*/
 
 #footer-bottom {
-    background-color: rgba (0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 30px 0;
     margin-top: 60px;
 }
